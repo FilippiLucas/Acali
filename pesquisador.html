@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pesquisador</title>
+        <link rel="stylesheet" href="pesquisador.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#" class="home-link"><img src="img/image.png"><p>ACALI</p></a>
+            <input type="checkbox" name="sidebar-active" id="sidebar-active" class="sidebar-active"/>
+
+            <label for="sidebar-active" class="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#111">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </label>
+
+            <label for="sidebar-active" class="overlay"></label>
+
+            <section class="links-container">
+                <label for="sidebar-active" class="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#111">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </label>
+
+                <a href="#" class="pesquisador-link">Pesquisador</a>
+                <a href="#" class="login">Login</a>
+            </section>
+        </nav>
+
+        <main class="container-projects">
+            <input type="checkbox" name="modal-active" id="modal-active">
+            <div class="modal-overlay"></div>
+            <section class="newProjectModal">
+                <div class="close-new-project-modal">
+                    <p>Criar novo projeto</p>
+                    <label for="modal-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#111"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
+                </div>
+
+                <hr>
+
+                <section class="new-project-form">
+                    <div class="input-group">
+                        <label for="title">Título</label>
+                        <input type="text" name="title" placeholder="Insira aqui o título do projeto">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="description">Descrição</label>
+                        <textarea name="description" placeholder="Insira aqui a descrição do projeto."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="privacy">
+                            <p>Visualização:</p>
+                            <input type="radio" name="privacy" id="public" value="public" class="privacy-radio">
+                            <label for="public" class="privacy-label privacy-label-1">Publico</label>
+                            <input type="radio" name="privacy" id="private" value="privacy" class="privacy-radio">
+                            <label for="private" class="privacy-label privacy-label-2">Privado</label>
+                        </div>
+                    </div>
+
+                    <label for="modal-active" class="button" style="width: 100%;">
+                        <span class="new-project-button">Criar Projeto</span>
+                    </label>
+                </section>
+            </section>
+
+            <section class="projects">
+ 
+                <section class="project-title">
+                    <p>Desenvolvimento e Modernização do Frontend para o Sistema Web Open Connect</p>
+                    <div class="progress-bar-outside">
+                        <div class="progress-bar-inside"><p>63%</p></div>
+                    </div>
+                </section>
+
+                <section class="subprojects-group">
+                    <div class="subproject subproject1">
+                        <p class="subproject-title">Subprojeto 1</p>
+                        <svg class="folder" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
+                        <div class="subproject-actions">
+                            <div class="edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58bcdd"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+                                <p>Editar</p>
+                            </div>
+                            <div class="delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff0000"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                                <p>Excluir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subproject subproject2">
+                        <p class="subproject-title">Subprojeto 2</p>
+                        <svg class="folder" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
+                        <div class="subproject-actions">
+                            <div class="edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58bcdd"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+                                <p>Editar</p>
+                            </div>
+                            <div class="delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff0000"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                                <p>Excluir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subproject subproject3">
+                        <p class="subproject-title">Subprojeto 3</p>
+                        <svg class="folder" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
+                        <div class="subproject-actions">
+                            <div class="edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58bcdd"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+                                <p>Editar</p>
+                            </div>
+                            <div class="delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff0000"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                                <p>Excluir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subproject subproject4">
+                        <p class="subproject-title">Subprojeto 4</p>
+                        <svg class="folder" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
+                        <div class="subproject-actions">
+                            <div class="edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58bcdd"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+                                <p>Editar</p>
+                            </div>
+                            <div class="delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff0000"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                                <p>Excluir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subproject new-subproject">
+                        <label for="modal-active">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-320h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
+                            <p>+ Criar Novo Sub Projeto</p>
+                        </label>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="container-new-projects">
+                <label for="modal-active">
+                    <section class="new-project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="64px" fill="#e3e3e3"><path d="M560-320h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
+                        <p>+ Criar Novo Projeto</p>
+                    </section>
+                </label>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <img src="img/image.png">
+                <div class="footer-text">
+                    <p>Conectando ideias,</p>
+                    <p>ciência e tecnologia.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
